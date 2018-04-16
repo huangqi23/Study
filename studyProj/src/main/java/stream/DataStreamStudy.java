@@ -11,7 +11,7 @@ public class DataStreamStudy {
         /*try {
             DataOutputStream dataOutputStream = new DataOutputStream(new FileOutputStream("C:/1.txt"));
             dataOutputStream.writeBytes("asdfasdfa");
-        } catch (FileNotFoundException e) {
+        } catch (FileNotFoundException e) {ddd
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
