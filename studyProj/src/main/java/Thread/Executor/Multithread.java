@@ -1,9 +1,6 @@
 package Thread.Executor;
 
-import java.util.concurrent.Executor;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
+import java.util.concurrent.*;
 
 public class Multithread {
     public static void main(String[] args) {
@@ -11,7 +8,15 @@ public class Multithread {
         MyTask myTask = new MyTask();
         MyTask myTask1 = new MyTask();
         ExecutorService service = Executors.newFixedThreadPool(2);
-        Future<Integer> future = service.submit(myTask);
-        Future<Integer> future1 = service.submit(myTask1);
+        Future<RecordInt> future = service.submit(myTask);
+        Future<RecordInt> future1 = service.submit(myTask1);
+        try {
+            System.out.println(future.get().getValue1());
+            System.out.println(future1.get().getValue2());
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
     }
 }
