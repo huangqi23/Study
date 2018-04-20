@@ -1,4 +1,4 @@
-package deadlock;
+package Thread.deadlock;
 
 public class MainClass {
     public static Integer valueA = 0;

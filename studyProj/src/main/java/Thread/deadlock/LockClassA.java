@@ -1,4 +1,4 @@
-package deadlock;
+package Thread.deadlock;
 
 public class LockClassA implements Runnable {
     @Override
