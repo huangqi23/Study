@@ -31,7 +31,20 @@ public class MainClass {
         }else{
             System.out.println("notAbsolute");
         }*/
-        mainClass.testresolve();
+        //mainClass.testresolve();
+        mainClass.testQuerystring();
+
+    }
+
+    public void testQuerystring() throws IOException {
+        URL url = new URL("http://www.baidu.com");
+        InputStream i = url.openStream();
+        int t;
+        byte[] arr = new byte[64];
+        while ((t=i.read(arr))!=-1){
+            System.out.println(new String(arr));
+            Arrays.fill(arr, (byte) 0);
+        }
     }
 
     public void testresolve() throws URISyntaxException {
@@ -81,7 +94,6 @@ public class MainClass {
             System.out.println(new String(arr));
             Arrays.fill(arr, (byte) 0);
         }
-
         //System.out.println(url.getProtocol());
     }
 
