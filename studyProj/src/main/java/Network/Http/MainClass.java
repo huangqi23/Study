@@ -26,7 +26,8 @@ public class MainClass {
 
         for(HttpCookie httpCookie : list){
             System.out.println(httpCookie.getName());
-        }
+            System.out.println(httpCookie.toString());
 
+        }
     }
 }
