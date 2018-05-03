@@ -16,12 +16,25 @@ public class MainClass {
     }
     public void showHeaders()throws IOException {
         URL url = new URL("http://www.bookbaow.com/book/download.asp?softid=69338&downid=4&id=69338");
+
         URLConnection c =  url.openConnection();
+        c.addRequestProperty("aa","bbb");
+        c.connect();
         for (int i=1;;i++){
             String header = c.getHeaderFieldKey(i);
             if (header == null)break;
             System.out.println(header+":"+c.getHeaderField(header));
         }
+
+        BufferedReader reader = null;
+        StringBuffer resultBuffer = new StringBuffer();
+        String tempLine = null;
+
+        reader = new BufferedReader(new InputStreamReader(c.getInputStream()));
+        while ((tempLine = reader.readLine()) != null) {
+            resultBuffer.append(tempLine);
+        }
+        System.out.println(resultBuffer);
     }
 
     public void downloadfile() throws IOException{
