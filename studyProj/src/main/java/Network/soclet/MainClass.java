@@ -9,6 +9,7 @@ import java.net.Socket;
 public class MainClass {
     public static void main(String[] args) throws IOException {
         Socket socket = new Socket("127.0.0.1",30000);
+
         socket.setSoTimeout(1000);
         PrintWriter printWriter = new PrintWriter(socket.getOutputStream());
         printWriter.write("sb");
