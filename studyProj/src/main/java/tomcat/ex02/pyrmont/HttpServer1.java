@@ -22,7 +22,7 @@ public class HttpServer1 {
   private boolean shutdown = false;
 
   public static void main(String[] args) {
-    HttpServer1 server = new HttpServer1();
+    HttpServer1 server = new HttpServer1(); //创建一个httpserver1
     server.await();
   }
 
@@ -30,6 +30,7 @@ public class HttpServer1 {
     ServerSocket serverSocket = null;
     int port = 8080;
     try {
+      //创建serversocket
       serverSocket =  new ServerSocket(port, 1, InetAddress.getByName("127.0.0.1"));
     }
     catch (IOException e) {
@@ -43,13 +44,14 @@ public class HttpServer1 {
       InputStream input = null;
       OutputStream output = null;
       try {
+        //获取一个连接，以及这个连接的input、output
         socket = serverSocket.accept();
         input = socket.getInputStream();
         output = socket.getOutputStream();
 
         // create Request object and parse
         Request request = new Request(input);
-        request.parse();
+        request.parse(); //打印接收到的请求，保存uri
 
         // create Response object
         Response response = new Response(output);
@@ -57,11 +59,11 @@ public class HttpServer1 {
 
         // check if this is a request for a servlet or a static resource
         // a request for a servlet begins with "/servlet/"
-        if (request.getUri().startsWith("/servlet/")) {
+        if (request.getUri().startsWith("/servlet/")) {  //如果请求是servlet
           ServletProcessor1 processor = new ServletProcessor1();
           processor.process(request, response);
         }
-        else {
+        else {  //如果请求是静态资源
           StaticResourceProcessor processor = new StaticResourceProcessor();
           processor.process(request, response);
         }

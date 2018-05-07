@@ -14,19 +14,14 @@ public class ServletProcessor1 {
   public void process(Request request, Response response) {
 
     String uri = request.getUri();
-    String servletName = uri.substring(uri.lastIndexOf("/") + 1);
+    String servletName = uri.substring(uri.lastIndexOf("/") + 1); //servlet的名字是最后一个/后面的字符串
     URLClassLoader loader = null;
 
     try {
-      // create a URLClassLoader
       URL[] urls = new URL[1];
       URLStreamHandler streamHandler = null;
       File classPath = new File(Constants.WEB_ROOT);
-      // the forming of repository is taken from the createClassLoader method in
-      // org.apache.catalina.startup.ClassLoaderFactory
       String repository = (new URL("file", null, classPath.getCanonicalPath() + File.separator)).toString() ;
-      // the code for forming the URL is taken from the addRepository method in
-      // org.apache.catalina.loader.StandardClassLoader class.
       urls[0] = new URL(null, repository, streamHandler);
       loader = new URLClassLoader(urls);
     }

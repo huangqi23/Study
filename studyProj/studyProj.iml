@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7">
-    <output url="file://$MODULE_DIR$/../studyProj/target/classes" />
-    <output-test url="file://$MODULE_DIR$/../studyProj/target/test-classes" />
-    <content url="file://$MODULE_DIR$/../studyProj">
-      <sourceFolder url="file://$MODULE_DIR$/../studyProj/src/main/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../studyProj/src/main/resources" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/../studyProj/src/test/java" isTestSource="true" />
-      <excludeFolder url="file://$MODULE_DIR$/../studyProj/target" />
+    <output url="file://$MODULE_DIR$/webroot" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/webroot" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="jdk1.8" level="project" />
+    <orderEntry type="library" name="Maven: javax.servlet:servlet-api:2.5" level="project" />
   </component>
 </module>
