@@ -59,7 +59,7 @@ public class HttpSniffer extends JFrame {
     });
     jLabel3.setText("Command");
     jLabel3.setBounds(new Rectangle(2, 39, 74, 24));
-    command.setText("GET /servlet/PrimitiveServlet HTTP/1.1");
+    command.setText("GET /servlet/PrimitiveServlet?ab=1&cc=222 HTTP/1.1");
     command.setBounds(new Rectangle(74, 42, 265, 24));
     jScrollPane1.setBounds(new Rectangle(8, 76, 560, 270));
     this.getContentPane().add(address, null);

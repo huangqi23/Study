@@ -114,6 +114,11 @@ public class Response implements ServletResponse {
   public void setContentLength(int length) {
   }
 
+  @Override
+  public void setContentLengthLong(long l) {
+
+  }
+
   public void setContentType(String type) {
   }
 
