@@ -1,0 +1,27 @@
+<component name="libraryTable">
+  <library name="commons-beanutils">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../HowTomcatWorks/lib/commons-beanutils.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../HowTomcatWorks/lib/commons-collections.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../HowTomcatWorks/lib/commons-daemon.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../HowTomcatWorks/lib/commons-digester.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../HowTomcatWorks/lib/commons-logging.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../HowTomcatWorks/lib/commons-modeler.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../HowTomcatWorks/lib/jaas.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../HowTomcatWorks/lib/jakarta-regexp-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../HowTomcatWorks/lib/jcert.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../HowTomcatWorks/lib/jnet.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../HowTomcatWorks/lib/jsse.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../HowTomcatWorks/lib/mx4j.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../HowTomcatWorks/lib/naming-common.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../HowTomcatWorks/lib/naming-factory.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../HowTomcatWorks/lib/naming-resources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../HowTomcatWorks/lib/servlet.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../HowTomcatWorks/lib/tomcat-util.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../HowTomcatWorks/lib/xercesImpl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../HowTomcatWorks/lib/xmlParserAPIs.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
