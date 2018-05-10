@@ -103,7 +103,7 @@ public class StringManager {
      */
 
     private StringManager(String packageName) {
-        String bundleName = packageName + ".LocalStrings";
+        String bundleName = "LocalStrings";//packageName + ".LocalStrings";
         bundle = ResourceBundle.getBundle(bundleName);
     }
 

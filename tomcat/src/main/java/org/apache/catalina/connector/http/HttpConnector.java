@@ -289,7 +289,7 @@ public final class HttpConnector
     /**
      * Set the connection timeout for this Connector.
      *
-     * @param count The new connection timeout
+     * @param //count The new connection timeout
      */
     public void setConnectionTimeout(int connectionTimeout) {
 
@@ -1098,7 +1098,7 @@ public final class HttpConnector
     }
 
 
-    /**
+    /** 创建serversocket
      * Initialize this connector (create ServerSocket here!)
      */
     public void initialize()
