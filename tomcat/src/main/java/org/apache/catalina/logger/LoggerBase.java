@@ -249,7 +249,7 @@ public abstract class LoggerBase
      * log.  The name and type of the servlet log is specific to the
      * servlet container.  This message will be logged unconditionally.
      *
-     * @param message A <code>String</code> specifying the message to be
+     * @param //message A <code>String</code> specifying the message to be
      *  written to the log file
      */
     public abstract void log(String msg);
