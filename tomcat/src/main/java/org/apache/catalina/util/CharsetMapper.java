@@ -95,8 +95,8 @@ public class CharsetMapper {
      * Default properties resource name.
      */
     public static final String DEFAULT_RESOURCE =
-      "/org/apache/catalina/util/CharsetMapperDefault.properties";
-
+      //"/org/apache/catalina/util/CharsetMapperDefault.properties";
+"/CharsetMapperDefault.properties";
 
     // ---------------------------------------------------------- Constructors
 

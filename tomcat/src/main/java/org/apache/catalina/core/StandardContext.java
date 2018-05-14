@@ -1081,7 +1081,7 @@ public class StandardContext
      * and system.err will be redirected to the logger during a servlet
      * execution.
      *
-     * @param swallowOuptut The new value
+     * @param //swallowOuptut The new value
      */
     public void setSwallowOutput(boolean swallowOutput) {
 
