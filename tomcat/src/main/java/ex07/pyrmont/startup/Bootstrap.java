@@ -43,7 +43,9 @@ public final class Bootstrap {
     // ------ add logger --------
     System.setProperty("catalina.base", System.getProperty("user.dir"));
     FileLogger logger = new FileLogger();
-    logger.setPrefix("FileLog_");
+    //logger.addLifecycleListener(listener); //可以监听到日志的生命周期
+
+    logger.setPrefix("aaFileLog_");
     logger.setSuffix(".txt");
     logger.setTimestamp(true);
     logger.setDirectory("webroot");

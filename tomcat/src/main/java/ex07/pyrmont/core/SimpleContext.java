@@ -695,6 +695,7 @@ public class SimpleContext implements Context, Pipeline, Lifecycle {
   }
 
   public synchronized void start() throws LifecycleException {
+    ((Lifecycle) logger).start();
     log("starting Context");
     if (started)
       throw new LifecycleException("SimpleContext has already started");
