@@ -1,0 +1,20 @@
+2018-05-15 07:01:20 HttpConnector Opening server socket on all host IP addresses
+2018-05-15 07:01:20 HttpConnector[8080] Starting background thread
+2018-05-15 07:01:20 HttpProcessor[8080][0] Starting background thread
+2018-05-15 07:01:20 HttpProcessor[8080][1] Starting background thread
+2018-05-15 07:01:20 HttpProcessor[8080][2] Starting background thread
+2018-05-15 07:01:20 HttpProcessor[8080][3] Starting background thread
+2018-05-15 07:01:20 HttpProcessor[8080][4] Starting background thread
+2018-05-15 07:01:20 WebappLoader[/myApp]: Cannot find message associated with key webappLoader.deploy
+2018-05-15 07:02:26 StandardManager[/myApp]: Cannot find message associated with key managerBase.seeding
+2018-05-15 07:02:26 StandardManager[/myApp]: Cannot find message associated with key managerBase.complete
+2018-05-15 07:05:35 HttpConnector Opening server socket on all host IP addresses
+2018-05-15 07:05:35 HttpConnector[8080] Starting background thread
+2018-05-15 07:05:35 HttpProcessor[8080][0] Starting background thread
+2018-05-15 07:05:35 HttpProcessor[8080][1] Starting background thread
+2018-05-15 07:05:35 HttpProcessor[8080][2] Starting background thread
+2018-05-15 07:05:35 HttpProcessor[8080][3] Starting background thread
+2018-05-15 07:05:35 HttpProcessor[8080][4] Starting background thread
+2018-05-15 07:05:36 WebappLoader[/myApp]: Cannot find message associated with key webappLoader.deploy
+2018-05-15 07:05:50 StandardManager[/myApp]: Cannot find message associated with key managerBase.seeding
+2018-05-15 07:05:50 StandardManager[/myApp]: Cannot find message associated with key managerBase.complete
