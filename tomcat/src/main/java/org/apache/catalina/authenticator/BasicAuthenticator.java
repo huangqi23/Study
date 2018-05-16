@@ -129,7 +129,7 @@ public class BasicAuthenticator
      *
      * @param request Request we are processing
      * @param response Response we are creating
-     * @param login Login configuration describing how authentication
+     * @param //login Login configuration describing how authentication
      *              should be performed
      *
      * @exception IOException if an input/output error occurs
@@ -138,7 +138,7 @@ public class BasicAuthenticator
                                 HttpResponse response,
                                 LoginConfig config)
         throws IOException {
-
+        //是否已经鉴定过主体
         // Have we already authenticated someone?
         Principal principal =
             ((HttpServletRequest) request.getRequest()).getUserPrincipal();

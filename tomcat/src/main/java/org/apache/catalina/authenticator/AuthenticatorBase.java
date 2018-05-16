@@ -440,7 +440,7 @@ public abstract class AuthenticatorBase
                                 " for principal " +
                                 session.getPrincipal());
                         hrequest.setAuthType(session.getAuthType());
-                        hrequest.setUserPrincipal(principal);
+                        hrequest.setUserPrincipal(principal); //如果缓存里有这个principal，直接赋给这个request
                     }
                 }
             }
@@ -492,7 +492,7 @@ public abstract class AuthenticatorBase
             // HTTP status code, so we do not have to do anything special
             return;
         }
-
+        //认证基于登录配置
         // Authenticate based upon the specified login configuration
         if (constraint.getAuthConstraint()) {
             if (debug >= 1)
@@ -638,7 +638,7 @@ public abstract class AuthenticatorBase
      *
      * @param request Request we are processing
      * @param response Response we are creating
-     * @param login Login configuration describing how authentication
+     * @param //login Login configuration describing how authentication
      *              should be performed
      *
      * @exception IOException if an input/output error occurs
