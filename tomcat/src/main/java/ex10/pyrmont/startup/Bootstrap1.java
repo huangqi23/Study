@@ -62,7 +62,7 @@ public final class Bootstrap1 {
 
     SecurityConstraint constraint = new SecurityConstraint();
     constraint.addCollection(securityCollection);
-    constraint.addAuthRole("manager"); //设置哪种角色可以访问受限资源
+    constraint.addAuthRole("manager"); //设置访问的权限
     LoginConfig loginConfig = new LoginConfig();
     loginConfig.setRealmName("Simple Realm");
     // add realm
